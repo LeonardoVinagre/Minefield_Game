@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mined Field Game</title>
+    <link rel="stylesheet" href="./minedField.css" />
+</head>
+<body>
+    <table id="minedField"> 
+    </table>
+
+    <div>
+        <h1>Mined Field Game</h1>
+        <h2>Create your own game</h2>
+        <p>Enter the number of lines: <input type="number" id="rows"  pattern="\d+"></p>
+        <p>Enter the number of columns: <input type="number" id="cols"></p>
+        <p>Enter the amount of mines: <input type="number" id="mines"></p>
+        <input type="button" value="Validate Field" onclick="validateData();">
+        <span><input type="checkbox" value="setFlag" id="setFlag">Flag</span>
+    </div>
+    <script src="./minedField.js"></script>
+</body>
+</html>
